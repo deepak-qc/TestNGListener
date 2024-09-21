@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-21T14:03:48 IST" name="Suite" finished-at="2024-09-21T14:04:16 IST" duration-ms="27994">
+    <groups>
+    </groups>
+    <test started-at="2024-09-21T14:03:48 IST" name="Test" finished-at="2024-09-21T14:04:16 IST" duration-ms="27994">
+      <class name="BasePackage.TestCases">
+        <test-method is-config="true" signature="openBrowserAndEnterURL()[pri:0, instance:BasePackage.TestCases@97e93f1]" started-at="2024-09-21T14:03:48 IST" name="openBrowserAndEnterURL" finished-at="2024-09-21T14:03:56 IST" duration-ms="7768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterURL -->
+        <test-method signature="coursesText()[pri:1, instance:BasePackage.TestCases@97e93f1]" started-at="2024-09-21T14:03:56 IST" name="coursesText" finished-at="2024-09-21T14:03:56 IST" duration-ms="128" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Courses> but was:<cour>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Courses> but was:<cour>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at BasePackage.TestCases.coursesText(TestCases.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coursesText -->
+        <test-method signature="coursesText1()[pri:2, instance:BasePackage.TestCases@97e93f1]" started-at="2024-09-21T14:03:56 IST" name="coursesText1" finished-at="2024-09-21T14:03:56 IST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coursesText1 -->
+        <test-method signature="clickOnCoursesAnchorText()[pri:3, instance:BasePackage.TestCases@97e93f1]" started-at="2024-09-21T14:03:56 IST" name="clickOnCoursesAnchorText" finished-at="2024-09-21T14:04:05 IST" duration-ms="9292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCoursesAnchorText -->
+        <test-method signature="clickOnCoursesAnchorText1()[pri:4, instance:BasePackage.TestCases@97e93f1]" started-at="2024-09-21T14:04:05 IST" name="clickOnCoursesAnchorText1" finished-at="2024-09-21T14:04:15 IST" duration-ms="10068" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Courses'])[1]"}
+  (Session info: chrome=128.0.6613.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [baa030e3987476bc1a94677000d5a3dc, findElement {value=(//a[text()='Courses'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\deepa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53240/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: baa030e3987476bc1a94677000d5a3dc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Courses'])[1]"}
+  (Session info: chrome=128.0.6613.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [baa030e3987476bc1a94677000d5a3dc, findElement {value=(//a[text()='Courses'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\deepa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53240/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: baa030e3987476bc1a94677000d5a3dc
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at BasePackage.TestCases.clickOnCoursesAnchorText1(TestCases.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCoursesAnchorText1 -->
+      </class> <!-- BasePackage.TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
